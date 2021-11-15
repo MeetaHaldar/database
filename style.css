@@ -1,0 +1,15 @@
+.container {
+    max-width: 40%!important;
+}
+
+@media (max-width:800px) {
+    .container {
+        max-width: 60%!important;
+    }
+}
+
+@media (max-width:700px) {
+    .container {
+        max-width: 70%!important;
+    }
+}
