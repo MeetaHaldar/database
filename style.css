@@ -1,15 +1,52 @@
+section {
+  max-height: 100vh !important;
+}
+html,
+section {
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
 .container {
-    max-width: 40%!important;
+  max-width: 25% !important;
+  /* background: red    polygon(0 0, 0% 100%, 100% 100%); */
+  background-color: white !important;
+}
+.container h1 {
+  font-family: "Merriweather", serif;
+  color: rgb(33, 163, 29);
+  font-weight: bold;
 }
 
-@media (max-width:800px) {
-    .container {
-        max-width: 60%!important;
-    }
+label {
+  font-family: "Andada Pro", serif;
 }
 
-@media (max-width:700px) {
+input {
+  cursor: pointer !important;
+  font-family: "Andada Pro", serif;
+}
+button {
+  background-color: rgb(15, 131, 15) !important;
+  border: none !important;
+  padding: 7px 25px !important;
+  border-radius: 10px !important;
+}
+@media (max-width: 1000px) {
     .container {
-        max-width: 70%!important;
+      max-width: 60% !important;
     }
+  }
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 60% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 70% !important;
+  }
 }

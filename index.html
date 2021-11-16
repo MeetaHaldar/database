@@ -12,50 +12,54 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Birthstone+Bounce:wght@500&family=Handlee&family=Merriweather&family=Pacifico&family=Rampart+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <form>
-        <div class="container">
+  <section>
+        <div class="container mt-5 p-4 shadow rounded">
 <h1 class="text-center p-2">DataBase</h1>
-<div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">First Name</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div> <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Last Name</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+<form action="" method="post" name="database">
+<div class="mb-1">
+    <label for="Fname" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="Fname" name="Fname" required>
+  </div> 
+  <div class="mb-1">
+    <label for="Nname" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="Nname" name="Nname" required>
   </div>
-   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">DOB</label>
-    <input type="date" class="form-control" id="exampleInputPassword1">
+   <div class="mb-1">
+    <label for="DOB" class="form-label">DOB</label>
+    <input type="date" class="form-control" id="DOB" name="DOB" required>
   </div>
-  <div class="mb-3"> 
-       <label for="exampleInputPassword1" class="form-label">Gender</label>
-    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-       <option value="1">Female</option>
-        <option value="2">Male</option>
-        <option value="3">Others</option>
+  <div class="mb-2"> 
+       <label for="Gender" class="form-label">Gender</label>
+    <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="Gender" required>
+       <option name="Gender" value="Female">Female</option>
+        <option name="Gender" value="Male">Male</option>
+        <option name="Gender"  value="Others">Others</option>
       </select>
 </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="mb-1">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email"  name ="email" aria-describedby="emailHelp" required>
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Phone No</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">     
+        <div class="mb-1">
+            <label for="Phone" class="form-label">Phone No</label>
+            <input type="text" class="form-control" id="Phone" name="Phone" aria-describedby="emailHelp" required>     
              </div>
    
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary text-center">Submit</button>
+       
+        <button type="submit" class="btn btn-primary text-center m-lg-auto" name="database">Submit</button>
       </form>
 
 
+    
+    
     </div>
-
+  </section>
   </body>
 
   <script
