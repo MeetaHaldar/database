@@ -8,7 +8,7 @@ if(isset($_POST['database'])){
  $email =$_POST['email'];
  $Phone =$_POST['Phone'];
 
- $sql="Insert into people (Fname,Nname,DOB,Gender,email,Phone) values ((:Fname),(:Nname),(:DOB),(:Gender),(:email) ,(:Phone));";
+ $sql="Insert into datacont (FistName,LastName,DOB,Gender,emailId,PhoneNo) values ((:Fname),(:Nname),(:DOB),(:Gender),(:email) ,(:Phone));";
  $query = $dbh->prepare($sql);
  $query-> bindParam(':Fname', $Fname, PDO::PARAM_STR);
  $query-> bindParam(':Nname', $Nname, PDO::PARAM_STR);
@@ -17,7 +17,7 @@ if(isset($_POST['database'])){
  $query-> bindParam(':email', $email, PDO::PARAM_STR);
  $query-> bindParam(':Phone', $Phone, PDO::PARAM_STR);
  if($query->execute()){
-	 header('location:index.html');
+	 header('location:./index.html');
 }
 }
 ?>
