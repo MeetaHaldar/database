@@ -8,6 +8,8 @@
  <li>
    A small database with security.
   </li>
+  </ul>
+  
   <h3>Tech Stack</h3>
   <ul>
     <li>HTML</li>
