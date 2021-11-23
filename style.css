@@ -9,17 +9,17 @@ section {
         
 }
 .container {
-  max-width: 25% !important;
+  max-width: 25% !important;      
   /* background: red    polygon(0 0, 0% 100%, 100% 100%); */
   background-color: white !important;
 }
 .container h1 {
-  font-family: "Merriweather", serif;
+  font-family: "Merriweather", serif;    
   color: rgb(33, 163, 29);
   font-weight: bold;
 }
 
-label {
+label {                 
   font-family: "Andada Pro", serif;
 }
 
@@ -32,6 +32,14 @@ button {
   border: none !important;
   padding: 7px 25px !important;
   border-radius: 10px !important;
+}
+
+ section .welcome-page{
+ text-align: center;
+}
+section .welcome-page h1{
+  text-align: center;
+  margin: auto;
 }
 @media (max-width: 1000px) {
     .container {

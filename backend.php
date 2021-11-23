@@ -17,7 +17,7 @@ if(isset($_POST['database'])){
  $query-> bindParam(':email', $email, PDO::PARAM_STR);
  $query-> bindParam(':Phone', $Phone, PDO::PARAM_STR);
  if($query->execute()){
-	 header('location:./index.html');
+	 header('location:./welcome.php');
 }
 }
 ?>
